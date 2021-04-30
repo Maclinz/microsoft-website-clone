@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: .9rem;
+    font-family: sans-serif;
+}
+
+body{
+    color: #4b4a4a;
+}
+
+a{
+    color: inherit;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #000000;
+    display: inline-block;
+}
+
+.sub-title{
+    padding: 2rem 0;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.navigation a{
+    position: relative;
+}
+
+.navigation a::before{
+    content: "";
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+    height: .2rem;
+    width: 0;
+    background-color: #000000;
+    transition: all .4s ease-in-out;
+}
+
+.nav-items a:hover::before{
+    height: .2rem;
+    width: 100%;
+}
+
+.nav-items li{
+    padding: .4rem .8rem;
+}
+
+.right-items-nav{
+    display: flex;
+    align-items: center;
+}
+.right-items-nav li{
+    padding: .4rem .8rem;
+}
+
+
+.right-icons{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 30px;
+    margin-right: 2rem;
+}
+
+input{
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+.search-icon{
+    margin-left: -6.5rem;
+    height: 17px;
+}
+.trolley-icon{
+    height: 22px;
+}
+.avatar-icon{
+    height: 40px;
+}
+
+/*Hero*/
+.hero-section{
+    height: 60vh;
+    background-color: red;
+    position: relative;
+}
+
+.hero-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.hero-content p{
+    padding: 1.8rem 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 200;
+}
+
+
+.hero-controls{
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-con-1, .hero-con-2, .hero-con-3, .hero-con-4{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.hero-con-1{
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.btn-primary{
+    background-color: black;
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    display: inline-block;
+}
+
+.services-section{
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+
+}
+.service a:hover{
+    text-decoration: underline;
+}
+.service a img{
+    padding-bottom: .3rem;
+}
+
+/*Products*/
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+.product{
+    height: 40vh;
+}
+
+.product-image{
+    height: 25vh;
+    padding-bottom: 2rem;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product p{
+    padding: .4rem 0;
+}
+.product a{
+    color: rgba(46, 82, 228, 0.703);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+/*Browser Section*/
+.browser-section{
+    height: 60vh;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.browser-content{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.browser-content p{
+    padding: 1.5rem 0;
+    color: black;
+}
+
+.browser-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.health-section{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    min-height: 20vh;
+    position: relative;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+.health-con{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.health-con a{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: black;
+}
+.health-con p{
+    padding: 1rem 0;
+}
+
+
+/*Footer*/
+.footer{
+    background-color: #F2F2F2 ;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+}
+.footer-content li{
+    padding: .6rem 0;
+}
+.footer-content h5{
+    padding-bottom: 1rem;
+}
+h5{
+    color: rgb(97, 97, 97);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+
+.footer-nav{
+    padding: 3rem 0;
+}
+/*Utilities*/
+.u-main-padding{
+    padding: 0 5rem;
+}
